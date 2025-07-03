@@ -7,26 +7,52 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #e0bbf7);
       display: flex;
       flex-direction: column;
-      height: 100vh;
-      justify-content: center;
       align-items: center;
-      font-family: sans-serif;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
     }
+
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      color: #B026FF;
       margin-bottom: 20px;
-      color: #8A2BE2;
+      text-shadow: 1px 1px 2px #fff;
+    }
+
+    #botao {
+      margin-top: 10px;
+    }
+
+    .botao-rosa {
+      background-color: #FF69B4;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .botao-rosa:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <h1>Livros Mágicos</h1>
+  <h1>✨ Livros Mágicos ✨</h1>
 
-  <script
-    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+  <div id="botao"></div>
+
+  <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
     data-preference-id="717845952-5f0fbc17-46ba-42ea-9f89-17ed1e2218ec"
     data-source="button"
   ></script>
