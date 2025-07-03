@@ -2,72 +2,33 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Livros Mágicos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-image: url('https://i.imgur.com/bupXOt2.jpg'); /* FUNDO LÚDICO ALEGRE */
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #fff;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      color: #da70d6;
-      text-shadow: 2px 2px #00000033;
-    }
-
-    p {
-      font-size: 1.2em;
-      background: rgba(255, 255, 255, 0.85);
-      color: #5a0080;
-      display: inline-block;
-      padding: 15px;
-      border-radius: 15px;
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    .botao-comprar {
-      margin-top: 30px;
       display: flex;
+      flex-direction: column;
+      height: 100vh;
       justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      text-align: center;
     }
-
-    /* Estilo do botão do Mercado Pago */
-    .mercado-pago-button-render {
-      border-radius: 25px !important;
-      background-color: #ff69b4 !important;
-      font-size: 1em !important;
-      padding: 12px 25px !important;
-      color: white !important;
-      font-weight: bold;
-      box-shadow: 2px 2px 10px #00000033;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #8A2BE2;
     }
   </style>
 </head>
 <body>
+  <h1>Livros Mágicos</h1>
 
-  <h1>✨ Bem-vindo ao site Livros Mágicos! ✨</h1>
-
-  <p>
-    Aqui você encontra livros infantis encantadores sobre o poder da imaginação e da Lei da Atração. <br>
-    Prepare-se para sonhar, aprender e criar! 🌈📚
-  </p>
-
-  <div class="botao-comprar">
-    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-      data-preference-id="717845952-5f0fbc17-46ba-42ea-9f89-17ed1e2218ec"
-      data-source="button">
-    </script>
-  </div>
-
+  <script
+    src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+    data-preference-id="717845952-5f0fbc17-46ba-42ea-9f89-17ed1e2218ec"
+    data-source="button"
+  ></script>
 </body>
 </html>
-
