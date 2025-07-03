@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background-image: url('https://i.imgur.com/Z9YVdYZ.jpeg'); /* esse é o fundo que você usou */
+      background-image: url('https://i.imgur.com/F7EoAcP.jpg'); /* Fundo que FUNCIONA */
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -30,28 +31,16 @@
       margin: 20px auto;
       border-radius: 15px;
     }
-
-    .botao-comprar {
-      display: inline-block;
-      background-color: #FF70B6;
-      color: white;
-      padding: 15px 30px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    .botao-comprar:hover {
-      background-color: #ff3796;
-    }
   </style>
 </head>
 <body>
   <h1>✨ Bem-vindo ao site Livros Mágicos! ✨</h1>
   <p>Aqui você encontra livros infantis encantadores sobre o poder da imaginação e da Lei da Atração. Prepare-se para sonhar, aprender e criar! 🌈📚</p>
-  <a class="botao-comprar" href="https://mpago.la/2uLNzsj" target="_blank">💜 Comprar Livro Agora</a>
+
+  <!-- Botão Mercado Pago -->
+  <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+    data-preference-id="717845952-6837f0e0-a38c-47af-9610-b536dcb16571" data-source="button">
+  </script>
 </body>
 </html>
 
